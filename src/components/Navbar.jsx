@@ -46,38 +46,17 @@ const Navbar = () => {
         </NavLink>
       </li>
       <li className="px-4 font-semibold">
-        <NavLink
-          to="/category"
-          className={({ isActive }) =>
-            isActive
-              ? "bg-gray-200 text-black py-2 px-4 rounded"
-              : "text-black hover:text-gray-500"
-          }
-        >
+        <NavLink>
           Category
         </NavLink>
       </li>
       <li className="px-4 font-semibold">
-        <NavLink
-          to="/custom"
-          className={({ isActive }) =>
-            isActive
-              ? "bg-gray-200 text-black py-2 px-4 rounded"
-              : "text-black hover:text-gray-500"
-          }
-        >
+        <NavLink>
           Custom
         </NavLink>
       </li>
       <li className="px-4 font-semibold">
-        <NavLink
-          to="/blog"
-          className={({ isActive }) =>
-            isActive
-              ? "bg-gray-200 text-black py-2 px-4 rounded"
-              : "text-black hover:text-gray-500"
-          }
-        >
+        <NavLink>
           Blog
         </NavLink>
       </li>

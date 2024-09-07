@@ -6,6 +6,8 @@ const ProductCard = ({ product }) => {
 
   return (
     <>
+      <div className="p-4 max-w-sm md:max-w-md lg:max-w-lg mx-auto">
+      {/* Image Container */}
       <div className="w-full h-48 bg-gray-200 flex items-center justify-center rounded mb-4">
         <img
           src={product.image}
@@ -13,26 +15,41 @@ const ProductCard = ({ product }) => {
           className="object-cover p-6 max-w-full max-h-full rounded"
         />
       </div>
-      <h3 className="text-lg font-semibold mb-2">{product.name}</h3>
 
-      <div className="flex gap-4">
-        <div className="text-lg text-gray-800 font-bold mb-2">
+      {/* Product Name */}
+      <h3 className="text-lg font-semibold mb-2 text-center lg:text-left">
+        {product.name}
+      </h3>
+
+      {/* Price Section */}
+      <div className="flex gap-4 justify-center lg:justify-start mb-2">
+        {/* Offer Price */}
+        <div className="text-lg text-gray-800 font-bold">
           €{product.offerPrice.toFixed(2)}
         </div>
+        {/* Regular Price */}
         <div className="text-lg text-gray-300 font-bold line-through">
           €{product.regularPrice.toFixed(2)}
         </div>
+        {/* Discount Percentage */}
         <div className="text-lg text-red-800 font-bold">
           {product.offerPercentage}% OFF
         </div>
       </div>
-      <p className="text-gray-600 mb-2">{product.description}</p>
+
+      {/* Description */}
+      <p className="text-gray-600 mb-2 text-center lg:text-left">
+        {product.description}
+      </p>
+
+      {/* Add to Cart Button */}
       <button
         className="mt-4 w-full bg-black text-white py-2 rounded hover:bg-gray-800"
-        onClick={() => addToCart(product)} // Add to cart handler
+        onClick={() => addToCart(product)}
       >
         Add to Cart
       </button>
+    </div>
     </>
   );
 };
