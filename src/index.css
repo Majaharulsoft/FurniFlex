@@ -1,3 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Lucida+Calligraphy&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+  .font-lucida {
+    font-family: 'Lucida Calligraphy', cursive;
+  }
+}
