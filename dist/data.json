@@ -1,0 +1,388 @@
+[
+  {
+    "id": 1,
+    "name": "Recliner Chair Wood",
+    "regularPrice": 350.00,
+    "offerPrice": 299.00,
+    "offerPercentage": 30,
+    "description": "it has a brackest that can be tilted back, and often a footrest extended.",
+    "category": "Rocking Chair",
+    "image": "/recelinar.png"
+  },
+
+   {
+    "id": 2,
+    "name": "Timber Ride Padded",
+    "regularPrice": 75.00,
+    "offerPrice": 59.00,
+    "offerPercentage": 30,
+    "description": "High Back Rocking Side Pockent Portable Folding Outdoor Camping Chairs.",
+    "category": "Rocking Chair",
+    "image": "/tembar.png"
+  },
+ 
+  {
+    "id": 3,
+    "name": "Leather Executive Chair",
+    "regularPrice": 300.00,
+    "offerPrice": 240.00,
+    "offerPercentage": 20,
+    "description": "High-back leather executive chair with padded armrests and adjustable reclining. Suitable for office executives.",
+    "category": "Side Chair",
+    "image": "/recelinar.png"
+  },
+  {
+    "id": 4,
+    "name": "Colored Wooden Chair",
+    "regularPrice": 350.00,
+    "offerPrice": 299.00,
+    "offerPercentage": 30,
+    "description": "It has a backrest that can be tilted back, and often a footrest extended.",
+    "category": "Rocking Chair",
+    "image": "/colored.png"
+  },
+  {
+    "id": 5,
+    "name": "Blank Bamboo Wicker",
+    "regularPrice": 350.00,
+    "offerPrice": 299.00,
+    "offerPercentage": 30,
+    "description": "Lightweight, easy to clean, sturdy, safe and stable. Non-slip legs.",
+    "category": "Rocking Chair",
+    "image": "/blank.png"
+  },
+  {
+    "id": 6,
+    "name": "Lounge relax Chair",
+    "regularPrice": 350.00,
+    "offerPrice": 280.00,
+    "offerPercentage": 20,
+    "description": "A seat , especially for one person, usually havign four legs for support.",
+    "category": "Lounge Chair",
+    "image": "/image 149.png"
+  },
+  {
+    "id": 7,
+    "name": "Isolated Wooden Rock",
+    "regularPrice": 400.00,
+    "offerPrice": 165.00,
+    "offerPercentage": 30,
+    "description": "It has a backrest that can be tilted back, and often a footrest extended.",
+    "category": "Rocking Chair",
+    "image": "/Isolated.png"
+  },
+  
+  {
+    "id": 9,
+    "name": "Minimal Empty Rocking ",
+    "regularPrice": 350.00,
+    "offerPrice": 299.00,
+    "offerPercentage": 30,
+    "description": "A seat , especially for one person, usually havign four legs for support.",
+    "category": "Rocking Chair",
+    "image": "/minimal.png"
+  },
+  {
+    "id": 10,
+    "name": "Kids Study Chair",
+    "regularPrice": 60.00,
+    "offerPrice": 50.00,
+    "offerPercentage": 17,
+    "description": "Colorful and adjustable study chair for kids with a comfortable cushion and back support, designed for study desks.",
+    "category": "Rocking Chair",
+    "image": "/image 149.png"
+  },
+  {
+    "id": 11,
+    "name": "Blank Bamboo Chair",
+    "regularPrice": 120.00,
+    "offerPrice": 100.00,
+    "offerPercentage": 17,
+    "description": "Adjustable height swivel bar stool with a footrest and cushioned seat. Great for kitchen counters.",
+    "category": "Side Chair",
+    "image": "/blank.png"
+  },
+  {
+    "id": 12,
+    "name": "Outdoor Patio Chair",
+    "regularPrice": 90.00,
+    "offerPrice": 75.00,
+    "offerPercentage": 17,
+    "description": "Weather-resistant outdoor patio chair made from durable plastic. Stackable design for easy storage.",
+    "category": "Rocking Chair",
+    "image": "/image 147.png"
+  },
+  {
+    "id": 13,
+    "name": "Kids Study Chair",
+    "regularPrice": 60.00,
+    "offerPrice": 50.00,
+    "offerPercentage": 17,
+    "description": "Colorful and adjustable study chair for kids with a comfortable cushion and back support, designed for study desks.",
+    "category": "Rocking Chair",
+    "image": "/image 149.png"
+  },
+  {
+    "id": 14,
+    "name": "Outdoor Patio Chair",
+    "regularPrice": 90.00,
+    "offerPrice": 75.00,
+    "offerPercentage": 17,
+    "description": "Weather-resistant outdoor patio chair made from durable plastic. Stackable design for easy storage.",
+    "category": "Rocking Chair",
+    "image": "/image 147.png"
+  },
+  {
+    "id": 15,
+    "name": "Kids Study Chair",
+    "regularPrice": 60.00,
+    "offerPrice": 50.00,
+    "offerPercentage": 17,
+    "description": "Colorful and adjustable study chair for kids with a comfortable cushion and back support, designed for study desks.",
+    "category": "Rocking Chair",
+    "image": "/image 149.png"
+  },
+  {
+    "id": 16,
+    "name": "Outdoor Patio Chair",
+    "regularPrice": 90.00,
+    "offerPrice": 75.00,
+    "offerPercentage": 17,
+    "description": "Weather-resistant outdoor patio chair made from durable plastic. Stackable design for easy storage.",
+    "category": "Rocking Chair",
+    "image": "/image 147.png"
+  },
+  {
+    "id": 17,
+    "name": "Kids Study Chair",
+    "regularPrice": 60.00,
+    "offerPrice": 50.00,
+    "offerPercentage": 17,
+    "description": "Colorful and adjustable study chair for kids with a comfortable cushion and back support, designed for study desks.",
+    "category": "Rocking Chair",
+    "image": "/image 149.png"
+  },
+  {
+    "id": 18,
+    "name": "Outdoor Patio Chair",
+    "regularPrice": 90.00,
+    "offerPrice": 75.00,
+    "offerPercentage": 17,
+    "description": "Weather-resistant outdoor patio chair made from durable plastic. Stackable design for easy storage.",
+    "category": "Rocking Chair",
+    "image": "/image 147.png"
+  },
+  {
+    "id": 19,
+    "name": "Kids Study Chair",
+    "regularPrice": 60.00,
+    "offerPrice": 50.00,
+    "offerPercentage": 17,
+    "description": "Colorful and adjustable study chair for kids with a comfortable cushion and back support, designed for study desks.",
+    "category": "Rocking Chair",
+    "image": "/image 149.png"
+  },
+  {
+    "id": 20,
+    "name": "Outdoor Patio Chair",
+    "regularPrice": 90.00,
+    "offerPrice": 75.00,
+    "offerPercentage": 17,
+    "description": "Weather-resistant outdoor patio chair made from durable plastic. Stackable design for easy storage.",
+    "category": "Rocking Chair",
+    "image": "/image 147.png"
+  },
+  {
+    "id": 21,
+    "name": "Kids Study Chair",
+    "regularPrice": 60.00,
+    "offerPrice": 50.00,
+    "offerPercentage": 17,
+    "description": "Colorful and adjustable study chair for kids with a comfortable cushion and back support, designed for study desks.",
+    "category": "Rocking Chair",
+    "image": "/image 149.png"
+  },
+  {
+    "id": 22,
+    "name": "Outdoor Patio Chair",
+    "regularPrice": 90.00,
+    "offerPrice": 75.00,
+    "offerPercentage": 17,
+    "description": "Weather-resistant outdoor patio chair made from durable plastic. Stackable design for easy storage.",
+    "category": "Rocking Chair",
+    "image": "/image 147.png"
+  },
+  {
+    "id": 23,
+    "name": "Kids Study Chair",
+    "regularPrice": 60.00,
+    "offerPrice": 50.00,
+    "offerPercentage": 17,
+    "description": "Colorful and adjustable study chair for kids with a comfortable cushion and back support, designed for study desks.",
+    "category": "Rocking Chair",
+    "image": "/image 149.png"
+  },
+  {
+    "id": 24,
+    "name": "Outdoor Patio Chair",
+    "regularPrice": 90.00,
+    "offerPrice": 75.00,
+    "offerPercentage": 17,
+    "description": "Weather-resistant outdoor patio chair made from durable plastic. Stackable design for easy storage.",
+    "category": "Rocking Chair",
+    "image": "/image 147.png"
+  },
+  {
+    "id": 25,
+    "name": "Kids Study Chair",
+    "regularPrice": 60.00,
+    "offerPrice": 50.00,
+    "offerPercentage": 17,
+    "description": "Colorful and adjustable study chair for kids with a comfortable cushion and back support, designed for study desks.",
+    "category": "Rocking Chair",
+    "image": "/image 149.png"
+  },
+  {
+    "id": 26,
+    "name": "Outdoor Patio Chair",
+    "regularPrice": 90.00,
+    "offerPrice": 75.00,
+    "offerPercentage": 17,
+    "description": "Weather-resistant outdoor patio chair made from durable plastic. Stackable design for easy storage.",
+    "category": "Rocking Chair",
+    "image": "/image 147.png"
+  },
+  {
+    "id": 27,
+    "name": "Kids Study Chair",
+    "regularPrice": 60.00,
+    "offerPrice": 50.00,
+    "offerPercentage": 17,
+    "description": "Colorful and adjustable study chair for kids with a comfortable cushion and back support, designed for study desks.",
+    "category": "Rocking Chair",
+    "image": "/image 149.png"
+  },
+  {
+    "id": 28,
+    "name": "Outdoor Patio Chair",
+    "regularPrice": 90.00,
+    "offerPrice": 75.00,
+    "offerPercentage": 17,
+    "description": "Weather-resistant outdoor patio chair made from durable plastic. Stackable design for easy storage.",
+    "category": "Rocking Chair",
+    "image": "/image 147.png"
+  },
+  {
+    "id": 29,
+    "name": "Kids Study Chair",
+    "regularPrice": 60.00,
+    "offerPrice": 50.00,
+    "offerPercentage": 17,
+    "description": "Colorful and adjustable study chair for kids with a comfortable cushion and back support, designed for study desks.",
+    "category": "Rocking Chair",
+    "image": "/image 149.png"
+  },
+  {
+    "id": 30,
+    "name": "Modern Lounge Chair",
+    "regularPrice": 200.00,
+    "offerPrice": 160.00,
+    "offerPercentage": 20,
+    "description": "A modern lounge chair with a sleek design, perfect for living rooms or offices. Comes with a soft cushion for extra comfort.",
+    "category": "Rocking Chair",
+    "image": "/image 147.png"
+  },
+ 
+  {
+    "id": 32,
+    "name": "Modern Lounge Chair",
+    "regularPrice": 200.00,
+    "offerPrice": 160.00,
+    "offerPercentage": 20,
+    "description": "A modern lounge chair with a sleek design, perfect for living rooms or offices. Comes with a soft cushion for extra comfort.",
+    "category": "Rocking Chair",
+    "image": "/image 147.png"
+  },
+  {
+    "id": 33,
+    "name": "Colored Wooden Chair",
+    "regularPrice": 300.00,
+    "offerPrice": 240.00,
+    "offerPercentage": 20,
+    "description": "High-back leather executive chair with padded armrests and adjustable reclining. Suitable for office executives.",
+    "category": "Side Chair",
+    "image": "/colored.png"
+  },
+  {
+    "id": 34,
+    "name": "Modern Lounge Chair",
+    "regularPrice": 200.00,
+    "offerPrice": 160.00,
+    "offerPercentage": 20,
+    "description": "A modern lounge chair with a sleek design, perfect for living rooms or offices. Comes with a soft cushion for extra comfort.",
+    "category": "Rocking Chair",
+    "image": "/image 147.png"
+  },
+
+  {
+    "id": 36,
+    "name": "Modern Lounge Chair",
+    "regularPrice": 200.00,
+    "offerPrice": 160.00,
+    "offerPercentage": 20,
+    "description": "A modern lounge chair with a sleek design, perfect for living rooms or offices. Comes with a soft cushion for extra comfort.",
+    "category": "Rocking Chair",
+    "image": "/image 147.png"
+  },
+ 
+  {
+    "id": 38,
+    "name": "Kids Study Chair",
+    "regularPrice": 60.00,
+    "offerPrice": 50.00,
+    "offerPercentage": 17,
+    "description": "Colorful and adjustable study chair for kids with a comfortable cushion and back support, designed for study desks.",
+    "category": "Rocking Chair",
+    "image": "/image 149.png"
+  },
+  {
+    "id": 39,
+    "name": "Outdoor Patio Chair",
+    "regularPrice": 90.00,
+    "offerPrice": 75.00,
+    "offerPercentage": 17,
+    "description": "Weather-resistant outdoor patio chair made from durable plastic. Stackable design for easy storage.",
+    "category": "Rocking Chair",
+    "image": "/image 147.png"
+  },
+  {
+    "id": 40,
+    "name": "Kids Study Chair",
+    "regularPrice": 60.00,
+    "offerPrice": 50.00,
+    "offerPercentage": 17,
+    "description": "Colorful and adjustable study chair for kids with a comfortable cushion and back support, designed for study desks.",
+    "category": "Rocking Chair",
+    "image": "/image 149.png"
+  },
+  {
+    "id": 41,
+    "name": "Outdoor Patio Chair",
+    "regularPrice": 90.00,
+    "offerPrice": 75.00,
+    "offerPercentage": 17,
+    "description": "Weather-resistant outdoor patio chair made from durable plastic. Stackable design for easy storage.",
+    "category": "Rocking Chair",
+    "image": "/image 147.png"
+  },
+  {
+    "id": 42,
+    "name": "Lounge Colored Chair",
+    "regularPrice": 300.00,
+    "offerPrice": 250.00,
+    "offerPercentage": 20,
+    "description": "A seat , especially for one person, usually havign four legs for support.",
+    "category": "Lounge Chair",
+    "image": "/colored.png"
+  }
+]
