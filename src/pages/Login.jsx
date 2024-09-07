@@ -51,7 +51,7 @@ const Login = () => {
           </div>
           {/* Email Input */}
           <form onSubmit={handleLogIn} className="flex flex-col gap-4">
-            <div className="flex flex-col bg-white rounded border border-[#DEDEDE] px-2 py-1">
+            <div className="flex flex-col bg-white rounded border border-[#DEDEDE] pt-3 px-2 py-1">
               <label htmlFor="email" className="text-gray-500 text-sm">
                 Email address
               </label>
