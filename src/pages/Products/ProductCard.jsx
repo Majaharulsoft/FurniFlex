@@ -17,27 +17,27 @@ const ProductCard = ({ product }) => {
       </div>
 
       {/* Product Name */}
-      <h3 className="text-lg font-semibold mb-2 text-center lg:text-left">
+      <h3 className="text-base font-semibold mb-2 text-center lg:text-left">
         {product.name}
       </h3>
 
       {/* Price Section */}
       <div className="flex gap-4 justify-center lg:justify-start mb-2">
         {/* Offer Price */}
-        <div className="text-lg text-gray-800 font-bold">
+        <div className="text-sm text-gray-800 font-bold">
           €{product.offerPrice.toFixed(2)}
         </div>
         {/* Regular Price */}
-        <div className="text-lg text-gray-300 font-bold line-through">
+        <div className="text-sm text-gray-300 font-bold line-through">
           €{product.regularPrice.toFixed(2)}
         </div>
-        {/* Discount Percentage */}
+       
         <div className="text-lg text-red-800 font-bold">
           {product.offerPercentage}% OFF
         </div>
       </div>
 
-      {/* Description */}
+      
       <p className="text-gray-600 mb-2 text-center lg:text-left">
         {product.description}
       </p>
