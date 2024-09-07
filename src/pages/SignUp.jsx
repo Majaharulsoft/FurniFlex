@@ -1,165 +1,188 @@
-import React from 'react'
-import HeroPic from '../assets/singup.png'
-import { FcGoogle } from "react-icons/fc";
-import { FaApple } from "react-icons/fa6";
+import React, { useContext, useState } from "react";
+import { FaEye, FaEyeSlash } from "react-icons/fa";
+import { Link, useNavigate, useLocation } from "react-router-dom";
+import Hero from "../Components/Hero";
+import GoogleLogin from "../Components/GoogleLogin";
+import AppleLogin from "../Components/AppleLogin";
+import { AuthContext } from "../Provider/AuthProvider";
 
 const SignUp = () => {
+  const [passwordVisible, setPasswordVisible] = useState(false);
+  const [error, setError] = useState("");
+  const { registerUser } = useContext(AuthContext);
+  const navigate = useNavigate();
+  const location = useLocation();
+  const from = location.state?.from?.pathname || '/';
+
+  const togglePasswordVisibility = () => {
+    setPasswordVisible(!passwordVisible);
+  };
+
+  const handleSignup = (event) => {
+    event.preventDefault();
+    const form = event.target;
+    const firstName = form.firstName.value;
+    const lastName = form.lastName.value;
+    const email = form.email.value;
+    const password = form.password.value;
+
+
+    // Check if email already exists
+    const users = JSON.parse(localStorage.getItem("users")) || [];
+    const userExists = users.some((user) => user.email === email);
+    if (userExists) {
+      setError("Email already exists");
+      return;
+    }
+
+    // Register user
+    registerUser(email, password, firstName, lastName)
+      .then((result) => {
+        const user = result.user;
+        console.log(user);
+        const userObject = { email, firstName, lastName };
+        users.push(userObject);
+        localStorage.setItem("users", JSON.stringify(users));
+
+        if (location.state && location.state.from) {
+          navigate(from, { replace: true });
+        } else {
+          navigate("/");
+        }
+      })
+      .catch((error) => {
+        console.log(error);
+        setError("Failed to create an account. Please try again.");
+      });
+  };
+
   return (
     <div className="flex">
-        <div className=" ">
-            <div className='w-[500Px] h-[618px] flex flex-col justify-center items-center top-0 bottom-0 bg-[#FAFAFA]'>
-                <div>
-                    <h2 className='font-bold text-[24px] text-center text-black'>Welcome Back</h2>
-                    <p className="text-[40px] font-bold font-barlow text-center">
-                            <span className="text-black">Furni</span>
-                            <span className="text-[#1E99F5]">Flex</span>
-                    </p>
-                    <p className='text-[#707070] text-[16px]'>Signup for purchase your desire products</p>
-                </div>
-        
-                <div className='flex-none pt-2'>
-                    <form method="post">
-                        <div className=" flex md:flex-row gap-3 flex-col">
-                            <div className="flex-auto p-2">
-                                <div className="mt-1">
-                                <input
-                                    name="first"
-                                    id="first"
-                                    type="text"
-                                    value=""
-                                    onChange=""
-                                    placeholder="First name (optional)"
-                                    className="px-2 py-3 mt-1 block w-full rounded-md border border-gray-300 shadow-sm focus:border-sky-500 focus:outline-none focus:ring-sky-500 sm:text-sm"
-                                />
-                                </div>
-                            </div>
+      {/* Left Section: Signup Form */}
+      <div className="flex-1 flex items-center justify-center bg-white">
+        <div className="w-full max-w-md flex flex-col gap-4 p-8 bg-gray-50 shadow-md rounded-lg">
+          <div className="text-center mb-4">
+            <h1 className="text-2xl font-bold mb-1">Welcome To</h1>
+            <h1 className="text-4xl font-bold mb-1">
+              Furni<span className="text-[#1E99F5]">Flex</span>
+            </h1>
+            <p className="text-gray-500 font-medium">
+              Signup to purchase your desired products
+            </p>
+          </div>
 
-                            <div className="flex-auto p-2">
-                                <div className="mt-1">
-                                <input
-                                    name="last"
-                                    id="last"
-                                    type="text"
-                                    value=""
-                                    onChange=""
-                                    placeholder="Last name (optional)"
-                                    className="px-2 py-3 mt-1 block w-full rounded-md border border-gray-300 shadow-sm focus:border-sky-500 focus:outline-none focus:ring-sky-500 sm:text-sm"
-                                />
-                                </div>
-                            </div>
-                        </div>
-
-                        <div className="w-[452px] h-[56px] flex md:flex-row gap-3 flex-col">
-                        <div className="flex-auto p-2">
-                            <div className="mt-1">
-                            <input
-                                name="email"
-                                id="email"
-                                type="email"
-                                value=""
-                                onChange=""
-                                placeholder="Email address"
-                                className="px-2 py-3 mt-1 block w-full rounded-md border border-gray-300 shadow-sm focus:border-sky-500 focus:outline-none focus:ring-sky-500 sm:text-sm"
-                            />
-                            </div>
-                        </div>
-                        </div>
-
-                        <div className=" w-[452px] h-[56px] flex md:flex-row gap-3 flex-col">
-                        <div className="flex-auto p-2 mt-1">
-                            <div className="mt-2">
-                            <input
-                                name="password"
-                                id="password"
-                                type="password"
-                                value=""
-                                onChange=""
-                                placeholder="Password"
-                                className="px-2 py-3 mt-1 block w-full rounded-md border border-gray-300 shadow-sm focus:border-sky-500 focus:outline-none focus:ring-sky-500 sm:text-sm"
-                            />
-                            </div>
-                        </div>
-                        </div>
-                        <div className='p-3 mt-1'>
-                        <input type='checkbox' />
-                        <a className='pl-2' href='#' >
-                        I agree to the  <span className='underline'>Terms & Policy</span></a>
-                        
-                        </div>
-                        
-
-                        <div className="pt-1 pl-2 w-[444px] h-[56px]">
-                            <button
-                                type="submit"
-                                className="flex w-full justify-center rounded-md border border-transparent bg-black py-2 px-4 text-sm font-medium text-white  " >
-                                Signup
-                            </button>
-                        </div>
-                    </form>
-                </div>
-
-                <div className="flex items-center">
-                <div className="flex-1 h-px dark:bg-gray-950"></div>
-                <p className="px-3 text-sm text-center font-semibold dark:text-gray-700">
-                  Or
-                </p>
-                <div className="flex-1 h-px dark:bg-gray-300"></div>
+          <form onSubmit={handleSignup} className="flex flex-col gap-4">
+            <div className="flex gap-4">
+              <div className="flex flex-col bg-white rounded px-2 py-1 flex-1">
+                <label htmlFor="firstName" className="text-gray-500 text-sm">
+                  First Name (Optional)
+                </label>
+                <input
+                  type="text"
+                  name="firstName"
+                  id="firstName"
+                  placeholder="Enter your first name"
+                  className="text-gray-600 placeholder-black border-none outline-none w-full"
+                />
               </div>
-                
-               
-
-                <div className='social'>
-                    <form action= "">
-
-                        <div className="w-[452px] h-[56px] flex md:flex-row gap-3 flex-col">
-                            <div className="flex-auto p-2">
-                                <div className="mt-1">
-                                <button className=" flex w-full justify-center rounded-md border border-gray-300 shadow-sm focus:border-sky-500 focus:outline-none focus:ring-sky-500 sm:text-sm border-[#D9D9D9] border-transparent py-2 px-4 text-sm font-medium text-black "type='submit'name='action'value="google">
-                                <FcGoogle  className="text-2xl pr-2" /> <a href=""className='text-[12px]' >Sign in with Google</a>
-                                </button>
-                                </div>
-                            </div>
-                            <div className="flex-auto p-2">
-                                <div className="mt-1">
-                                <button className=" flex w-full justify-center rounded-md border border-gray-300 shadow-sm focus:border-sky-500 focus:outline-none focus:ring-sky-500 sm:text-sm py-2 px-4 text-sm font-medium text-black "type='submit'name='action'value="google">
-                                <FaApple className="text-2xl pr-2"  /> <a href="" className='text-[12px]'>Sign in with Apple</a>
-                                </button>
-                                </div>
-                            </div>
-                        </div>
-                    </form>
-                    <div className='pt-3 flex items-center justify-center'>
-                    <span> Have an account? <a className="text-[#0F3DDE] " href="/login" title> Login</a></span>
-                    </div>
-                </div>
+              <div className="flex flex-col bg-white rounded px-2 py-1 flex-1">
+                <label htmlFor="lastName" className="text-gray-500 text-sm">
+                  Last Name (Optional)
+                </label>
+                <input
+                  type="text"
+                  name="lastName"
+                  id="lastName"
+                  placeholder="Enter your last name"
+                  className="text-gray-600 placeholder-black border-none outline-none w-full"
+                />
+              </div>
             </div>
-        </div>
 
-        <div className=" ">  
-            <div className="flex  justify-center items-center bg-cover bg-center"
-                style={{ backgroundImage: `url(${HeroPic})`, width: '500px', height: '1024px' }}>
-                <div className="w-[445px] h-[181px] text-center">
-                    <div className="flex flex-col items-center justify-center">
-                        <div className="flex items-center justify-center w-[89px] h-[85px] bg-[#1E99F5] rounded-full">
-                            <p className=" font-lucida text-[36px] italic text-black">F</p>
-                        </div>
-                        <p className="text-[36px] font-bold font-inter mt-4">
-                            <span className="text-white">Furni</span>
-                            <span className="text-[#1E99F5]">Flex</span>
-                        </p>
-                    </div>
-                    <div>
-                        <p className="text-[#C8C4C4] mt-4 font-inter">
-                            Discover a seamless shopping experience with our curated collection of products. From fashion to electronics, 
-                            we bring quality.
-                        </p>
-                    </div>
-                </div>
+            {/* Email Input */}
+            <div className="flex flex-col bg-white rounded px-2 py-1">
+              <label htmlFor="email" className="text-gray-500 text-sm">
+                Email address
+              </label>
+              <input
+                type="email"
+                name="email"
+                id="email"
+                placeholder="Enter your email"
+                required
+                className="text-gray-600 placeholder-black border-none outline-none w-full"
+              />
             </div>
-        </div>
 
+            {/* Password Input */}
+            <div className="flex items-center bg-white rounded px-2 py-1">
+              <div className="flex flex-col flex-grow">
+                <label htmlFor="password" className="text-gray-500 text-sm">
+                  Password
+                </label>
+                <input
+                  type={passwordVisible ? "text" : "password"}
+                  name="password"
+                  id="password"
+                  placeholder="Enter your password"
+                  required
+                  className="placeholder-black text-gray-600 border-none outline-none w-full"
+                />
+              </div>
+              <button
+                type="button"
+                onClick={togglePasswordVisibility}
+                className="ml-2 text-gray-500 text-xl"
+              >
+                {passwordVisible ? <FaEyeSlash /> : <FaEye />}
+              </button>
+            </div>
+
+            {error && <div className="text-red-500 mb-2">{error}</div>}
+
+            <div className="flex items-center gap-2">
+              <input type="checkbox" id="terms" />
+              <label htmlFor="terms" className="text-sm">
+                I agree to the{" "}
+                <a href="#" className="text-blue-500 underline">
+                  Terms & Policy
+                </a>
+              </label>
+            </div>
+
+            <button
+              className="bg-black py-3 text-lg text-white font-semibold rounded-lg w-full"
+              type="submit"
+            >
+              Sign Up
+            </button>
+          </form>
+
+          <div className="flex items-center justify-center my-4">
+            <hr className="w-full border-gray-300" />
+            <span className="mx-3 text-gray-500">or</span>
+            <hr className="w-full border-gray-300" />
+          </div>
+
+          <div className="flex gap-4">
+            <GoogleLogin />
+            <AppleLogin />
+          </div>
+
+          <p className="text-center my-4">
+            Have an account?{" "}
+            <Link className="text-[#0F3DDE] font-semibold" to="/login">
+              Sign In
+            </Link>
+          </p>
+        </div>
+      </div>
+      {/* Right Section: Hero Image/Content */}
+      <div className="flex-1">
+        <Hero />
+      </div>
     </div>
-  )
-}
+  );
+};
 
-export default SignUp
+export default SignUp;

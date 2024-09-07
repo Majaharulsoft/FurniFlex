@@ -1,13 +1,18 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
-import { RouterProvider } from 'react-router-dom'
-
-import App from './App.jsx'
+import {RouterProvider,} from "react-router-dom";
 import './index.css'
-import router from './routes/index.jsx'
+import AuthProvider from './Provider/AuthProvider';
+import router from './Route/Router';
+import { CartProvider } from './Provider/CartProvider';
+
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <RouterProvider router={router} />
+    <AuthProvider>
+      <CartProvider>
+        <RouterProvider router={router} />
+        </CartProvider>
+      </AuthProvider>
   </React.StrictMode>,
 )
