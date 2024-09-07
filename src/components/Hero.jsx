@@ -2,7 +2,7 @@ import React from "react";
 
 const Hero = () => {
   return (
-    <div className="bg-[url('/public/hero.png')] bg-cover bg-center h-[1024px] w-full flex items-center justify-center ">
+    <div className="bg-[url('/hero.png')] bg-cover bg-center h-[1024px] w-full flex items-center justify-center ">
       <div className="w-[445px] text-center flex flex-col items-center gap-2">
         <div className="bg-[#1E99F5] rounded-full p-2">
         <img
