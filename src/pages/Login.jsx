@@ -51,7 +51,7 @@ const Login = () => {
           </div>
           {/* Email Input */}
           <form onSubmit={handleLogIn} className="flex flex-col gap-4">
-            <div className="flex flex-col bg-white rounded px-2 py-1">
+            <div className="flex flex-col bg-white rounded border border-[#DEDEDE] px-2 py-1">
               <label htmlFor="email" className="text-gray-500 text-sm">
                 Email address
               </label>
@@ -64,8 +64,8 @@ const Login = () => {
               />
             </div>
             {/* Password Input */}
-            <div className="flex items-center bg-white rounded px-2 py-1">
-              <div className="flex flex-col bg-white rounded flex-grow">
+            <div className="flex items-center bg-white rounded border border-[#DEDEDE] px-2 py-1">
+              <div className="flex flex-col bg-white rounded  flex-grow">
                 <label htmlFor="password" className="text-gray-500 text-sm">
                   Password
                 </label>
