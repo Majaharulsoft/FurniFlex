@@ -60,7 +60,7 @@ const Login = () => {
                 name="email"
                 placeholder="Enter your email"
                 required
-                className="text-gray-600 placeholder-black font-500 border-none outline-none"
+                className="text-black placeholder-black font-500 border-none outline-none"
               />
             </div>
             {/* Password Input */}
@@ -74,7 +74,7 @@ const Login = () => {
                   name="password"
                   placeholder="Enter your password"
                   required
-                  className="placeholder-black text-gray-600 border-none outline-none"
+                  className="placeholder-black text-black border-none outline-none"
                 />
               </div>
               <div className="ml-2">
@@ -84,9 +84,9 @@ const Login = () => {
                   className="cursor-pointer"
                 >
                   {passwordVisible ? (
-                    <FaEyeSlash className="text-gray-500 text-xl" />
+                    <FaEyeSlash className="text-black text-xl" />
                   ) : (
-                    <FaEye className="text-gray-500 text-xl" />
+                    <FaEye className="text-black text-xl" />
                   )}
                 </button>
               </div>
