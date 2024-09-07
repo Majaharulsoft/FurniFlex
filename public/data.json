@@ -1,24 +1,26 @@
 [
   {
     "id": 1,
-    "name": "Ergonomic Office Chair",
-    "regularPrice": 150.00,
-    "offerPrice": 120.00,
-    "offerPercentage": 20,
-    "description": "This ergonomic office chair provides lumbar support and adjustable height. Ideal for long hours of work.",
-    "category": "Side Chair",
-    "image": "/image 146.png"
-  },
-  {
-    "id": 2,
-    "name": "Modern Lounge Chair",
-    "regularPrice": 200.00,
-    "offerPrice": 160.00,
-    "offerPercentage": 20,
-    "description": "A modern lounge chair with a sleek design, perfect for living rooms or offices. Comes with a soft cushion for extra comfort.",
+    "name": "Recliner Chair Wood",
+    "regularPrice": 350.00,
+    "offerPrice": 299.00,
+    "offerPercentage": 30,
+    "description": "it has a brackest that can be tilted back, and often a footrest extended.",
     "category": "Rocking Chair",
-    "image": "/image 147.png"
+    "image": "/recelinar.png"
   },
+
+   {
+    "id": 2,
+    "name": "Timber Ride Padded",
+    "regularPrice": 75.00,
+    "offerPrice": 59.00,
+    "offerPercentage": 30,
+    "description": "High Back Rocking Side Pockent Portable Folding Outdoor Camping Chairs.",
+    "category": "Rocking Chair",
+    "image": "/tembar.png"
+  },
+ 
   {
     "id": 3,
     "name": "Leather Executive Chair",
@@ -27,67 +29,58 @@
     "offerPercentage": 20,
     "description": "High-back leather executive chair with padded armrests and adjustable reclining. Suitable for office executives.",
     "category": "Side Chair",
-    "image": "/image.png"
+    "image": "/recelinar.png"
   },
   {
     "id": 4,
-    "name": "Mesh Back Task Chair",
-    "regularPrice": 100.00,
-    "offerPrice": 85.00,
-    "offerPercentage": 15,
-    "description": "Mesh back task chair with adjustable lumbar support and a breathable design for enhanced comfort during work.",
+    "name": "Colored Wooden Chair",
+    "regularPrice": 350.00,
+    "offerPrice": 299.00,
+    "offerPercentage": 30,
+    "description": "It has a backrest that can be tilted back, and often a footrest extended.",
     "category": "Rocking Chair",
-    "image": "/recline chair.png"
+    "image": "/colored.png"
   },
   {
     "id": 5,
-    "name": "Accent Armchair",
-    "regularPrice": 180.00,
-    "offerPrice": 144.00,
-    "offerPercentage": 20,
-    "description": "Stylish accent armchair with a sturdy wooden frame and comfortable fabric upholstery, perfect for any room decor.",
+    "name": "Blank Bamboo Wicker",
+    "regularPrice": 350.00,
+    "offerPrice": 299.00,
+    "offerPercentage": 30,
+    "description": "Lightweight, easy to clean, sturdy, safe and stable. Non-slip legs.",
     "category": "Rocking Chair",
-    "image": "/image 148.png"
+    "image": "/blank.png"
   },
   {
     "id": 6,
-    "name": "Recliner Chair",
+    "name": "Lounge relax Chair",
     "regularPrice": 350.00,
     "offerPrice": 280.00,
     "offerPercentage": 20,
-    "description": "Comfortable recliner chair with a manual lever, padded seat, and backrest for maximum relaxation at home.",
+    "description": "A seat , especially for one person, usually havign four legs for support.",
     "category": "Lounge Chair",
     "image": "/image 149.png"
   },
   {
     "id": 7,
-    "name": "Dining Chair Set of 4",
-    "regularPrice": 250.00,
-    "offerPrice": 200.00,
-    "offerPercentage": 20,
-    "description": "Set of 4 modern dining chairs with upholstered seats and wooden legs. Durable and easy to clean.",
+    "name": "Isolated Wooden Rock",
+    "regularPrice": 400.00,
+    "offerPrice": 165.00,
+    "offerPercentage": 30,
+    "description": "It has a backrest that can be tilted back, and often a footrest extended.",
     "category": "Rocking Chair",
-    "image": "/image.png"
+    "image": "/Isolated.png"
   },
-  {
-    "id": 8,
-    "name": "Swivel Bar Stool",
-    "regularPrice": 120.00,
-    "offerPrice": 100.00,
-    "offerPercentage": 17,
-    "description": "Adjustable height swivel bar stool with a footrest and cushioned seat. Great for kitchen counters or home bars.",
-    "category": "Side Chair",
-    "image": "/image 146.png"
-  },
+  
   {
     "id": 9,
-    "name": "Outdoor Patio Chair",
-    "regularPrice": 90.00,
-    "offerPrice": 75.00,
-    "offerPercentage": 17,
-    "description": "Weather-resistant outdoor patio chair made from durable plastic. Stackable design for easy storage.",
+    "name": "Minimal Empty Rocking ",
+    "regularPrice": 350.00,
+    "offerPrice": 299.00,
+    "offerPercentage": 30,
+    "description": "A seat , especially for one person, usually havign four legs for support.",
     "category": "Rocking Chair",
-    "image": "/image 147.png"
+    "image": "/minimal.png"
   },
   {
     "id": 10,
@@ -101,13 +94,13 @@
   },
   {
     "id": 11,
-    "name": "Swivel Bar Stool",
+    "name": "Blank Bamboo Chair",
     "regularPrice": 120.00,
     "offerPrice": 100.00,
     "offerPercentage": 17,
-    "description": "Adjustable height swivel bar stool with a footrest and cushioned seat. Great for kitchen counters or home bars.",
+    "description": "Adjustable height swivel bar stool with a footrest and cushioned seat. Great for kitchen counters.",
     "category": "Side Chair",
-    "image": "/image 146.png"
+    "image": "/blank.png"
   },
   {
     "id": 12,
@@ -299,16 +292,7 @@
     "category": "Rocking Chair",
     "image": "/image 147.png"
   },
-  {
-    "id": 31,
-    "name": "Leather Executive Chair",
-    "regularPrice": 300.00,
-    "offerPrice": 240.00,
-    "offerPercentage": 20,
-    "description": "High-back leather executive chair with padded armrests and adjustable reclining. Suitable for office executives.",
-    "category": "Side Chair",
-    "image": "/image.png"
-  },
+ 
   {
     "id": 32,
     "name": "Modern Lounge Chair",
@@ -321,13 +305,13 @@
   },
   {
     "id": 33,
-    "name": "Leather Executive Chair",
+    "name": "Colored Wooden Chair",
     "regularPrice": 300.00,
     "offerPrice": 240.00,
     "offerPercentage": 20,
     "description": "High-back leather executive chair with padded armrests and adjustable reclining. Suitable for office executives.",
     "category": "Side Chair",
-    "image": "/image.png"
+    "image": "/colored.png"
   },
   {
     "id": 34,
@@ -339,16 +323,7 @@
     "category": "Rocking Chair",
     "image": "/image 147.png"
   },
-  {
-    "id": 35,
-    "name": "Leather Executive Chair",
-    "regularPrice": 300.00,
-    "offerPrice": 240.00,
-    "offerPercentage": 20,
-    "description": "High-back leather executive chair with padded armrests and adjustable reclining. Suitable for office executives.",
-    "category": "Side Chair",
-    "image": "/image.png"
-  },
+
   {
     "id": 36,
     "name": "Modern Lounge Chair",
@@ -359,16 +334,7 @@
     "category": "Rocking Chair",
     "image": "/image 147.png"
   },
-  {
-    "id": 37,
-    "name": "Leather Executive Chair",
-    "regularPrice": 300.00,
-    "offerPrice": 240.00,
-    "offerPercentage": 20,
-    "description": "High-back leather executive chair with padded armrests and adjustable reclining. Suitable for office executives.",
-    "category": "Side Chair",
-    "image": "/image.png"
-  },
+ 
   {
     "id": 38,
     "name": "Kids Study Chair",
@@ -408,5 +374,15 @@
     "description": "Weather-resistant outdoor patio chair made from durable plastic. Stackable design for easy storage.",
     "category": "Rocking Chair",
     "image": "/image 147.png"
+  },
+  {
+    "id": 42,
+    "name": "Lounge Colored Chair",
+    "regularPrice": 300.00,
+    "offerPrice": 250.00,
+    "offerPercentage": 20,
+    "description": "A seat , especially for one person, usually havign four legs for support.",
+    "category": "Lounge Chair",
+    "image": "/colored.png"
   }
 ]

@@ -6,7 +6,7 @@ const ProductCard = ({ product }) => {
 
   return (
     <>
-      <div className="p-4 max-w-sm md:max-w-md lg:max-w-lg mx-auto">
+      <div className="p-1 max-w-sm md:max-w-md lg:max-w-lg mx-auto">
       {/* Image Container */}
       <div className="w-full h-48 bg-gray-200 flex items-center justify-center rounded mb-4">
         <img
@@ -22,7 +22,7 @@ const ProductCard = ({ product }) => {
       </h3>
 
       {/* Price Section */}
-      <div className="flex gap-4 justify-center lg:justify-start mb-2">
+      <div className="flex gap-1 justify-center lg:justify-start mb-2">
         {/* Offer Price */}
         <div className="text-sm text-gray-800 font-bold">
           €{product.offerPrice.toFixed(2)}
@@ -32,13 +32,13 @@ const ProductCard = ({ product }) => {
           €{product.regularPrice.toFixed(2)}
         </div>
        
-        <div className="text-lg text-red-800 font-bold">
+        <div className="text-base text-red-800 font-bold ">
           {product.offerPercentage}% OFF
         </div>
       </div>
 
       
-      <p className="text-gray-600 mb-2 text-center lg:text-left">
+      <p className="text-gray-600 mb-2 text-justify text-sm lg:text-left">
         {product.description}
       </p>
 

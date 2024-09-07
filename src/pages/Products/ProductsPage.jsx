@@ -48,7 +48,7 @@ const ProductsPage = () => {
           {categories.map((category) => (
             <li
               key={category}
-              className={`cursor-pointer py-2 px-4 rounded text-gray-500 text-xl md:text-2xl hover:bg-gray-100 ${
+              className={`cursor-pointer py-2 px-4 rounded text-gray-500 text-xl md:text-lg hover:bg-gray-100 ${
                 selectedCategory === category
                   ? "bg-black text-white font-semibold hover:bg-black"
                   : ""
@@ -66,8 +66,8 @@ const ProductsPage = () => {
       </div>
 
       {/* Products Section */}
-      <div className="w-full md:w-3/4">
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 pl-0 md:pl-4">
+      <div className="w-full md:w-4/4 ">
+        <div className="grid grid-cols-1 sm:grid-cols-1 lg:grid-cols-3 gap-4 md:pl-4">
           {currentProducts.map((product) => (
             <div
               key={product.id}
