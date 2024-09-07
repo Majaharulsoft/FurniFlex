@@ -7,7 +7,6 @@ import PrivateRoute from "./PrivateRoute";
 import ProductsPage from "../Pages/Products/ProductsPage";
 import CartPage from "../Pages/CartPage";
 
-
 const router = createBrowserRouter([
   {
     path: "/",

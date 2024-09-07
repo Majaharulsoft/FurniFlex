@@ -82,7 +82,7 @@ const SignUp = () => {
                   name="firstName"
                   id="firstName"
                   placeholder="Enter your first name"
-                  className="text-gray-600 placeholder-black border-none outline-none w-full"
+                  className="text-black placeholder-black border-none outline-none w-full"
                 />
               </div>
               <div className="flex flex-col bg-white rounded px-2 py-1 flex-1">
@@ -94,7 +94,7 @@ const SignUp = () => {
                   name="lastName"
                   id="lastName"
                   placeholder="Enter your last name"
-                  className="text-gray-600 placeholder-black border-none outline-none w-full"
+                  className="text-black placeholder-black border-none outline-none w-full"
                 />
               </div>
             </div>
@@ -110,7 +110,7 @@ const SignUp = () => {
                 id="email"
                 placeholder="Enter your email"
                 required
-                className="text-gray-600 placeholder-black border-none outline-none w-full"
+                className="text-black placeholder-black border-none outline-none w-full"
               />
             </div>
 
@@ -126,7 +126,7 @@ const SignUp = () => {
                   id="password"
                   placeholder="Enter your password"
                   required
-                  className="placeholder-black text-gray-600 border-none outline-none w-full"
+                  className="placeholder-black text-black border-none outline-none w-full"
                 />
               </div>
               <button
