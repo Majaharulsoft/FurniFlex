@@ -73,7 +73,7 @@ const SignUp = () => {
 
           <form onSubmit={handleSignup} className="flex flex-col gap-4">
             <div className="flex gap-4">
-              <div className="flex flex-col bg-white rounded px-2 py-1 flex-1">
+              <div className="flex flex-col bg-white rounded border border-[#DEDEDE] px-2 py-1 flex-1">
                 <label htmlFor="firstName" className="text-gray-500 text-sm">
                   First Name (Optional)
                 </label>
@@ -85,7 +85,7 @@ const SignUp = () => {
                   className="text-black placeholder-black border-none outline-none w-full"
                 />
               </div>
-              <div className="flex flex-col bg-white rounded px-2 py-1 flex-1">
+              <div className="flex flex-col bg-white rounded border border-[#DEDEDE] px-2 py-1 flex-1">
                 <label htmlFor="lastName" className="text-gray-500 text-sm">
                   Last Name (Optional)
                 </label>
@@ -100,7 +100,7 @@ const SignUp = () => {
             </div>
 
             {/* Email Input */}
-            <div className="flex flex-col bg-white rounded px-2 py-1">
+            <div className="flex flex-col bg-white rounded border border-[#DEDEDE] px-2 py-1">
               <label htmlFor="email" className="text-gray-500 text-sm">
                 Email address
               </label>
@@ -115,7 +115,7 @@ const SignUp = () => {
             </div>
 
             {/* Password Input */}
-            <div className="flex items-center bg-white rounded px-2 py-1">
+            <div className="flex items-center bg-white rounded border border-[#DEDEDE] px-2 py-1">
               <div className="flex flex-col flex-grow">
                 <label htmlFor="password" className="text-gray-500 text-sm">
                   Password
